@@ -6,12 +6,14 @@ export default function LogoCloud({ companies, logoCloudTitle }) {
 
   return (
     <Box bg="indigo.700">
-      <Box maxW="7xl" mx="auto" py={[16, 20]} px={[4, 6, null, 8]}>
-        <Heading as="h2" fontSize="3xl" fontWeight="extrabold" color="white">
-          {logoCloudTitle}
-        </Heading>
+      <Box maxW="7xl" display="flex" alignItems="center" justifyContent="space-around" mx="auto" py={[16]} px={[4, 6, null, 8]}>
+        <Box>
+          <Heading as="h2" fontSize="3xl" fontWeight="extrabold" color="white">
+            {logoCloudTitle}
+          </Heading>
+        </Box>
 
-        <Box display="flow-root" mt={{ base: 8, lg: 10 }}>
+        <Box>
           <Flex
             mt={-4}
             ml={{ base: -8, lg: -4 }}
@@ -26,7 +28,7 @@ export default function LogoCloud({ companies, logoCloudTitle }) {
                 flexGrow={{ base: 1, lg: 0 }}
                 flexShrink="0"
               >
-                <Box pos="relative" w={44}>
+                <Box pos="relative" w={44} bg="white" p="4">
                   <Image
                     src={company.logo.url}
                     height={company.logo.height}

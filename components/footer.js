@@ -186,7 +186,7 @@ export default function Footer({ primaryLinks, secondaryLinks }) {
             color="gray.400"
             order={{ md: 1 }}
           >
-            &copy; {new Date().getFullYear()} GraphCMS GmbH All rights reserved.
+            &copy; {new Date().getFullYear()} World Servants Doetinchem.
           </Text>
         </Box>
       </Box>

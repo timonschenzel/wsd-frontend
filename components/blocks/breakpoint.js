@@ -18,7 +18,7 @@ export default function Breakpoint({ buttons, subtitle, title }) {
           <Text as="span" display="block">
             {title}
           </Text>
-          <Text as="span" display="block" color="indigo.600">
+          <Text as="span" display="block" color="gray.500" fontSize="2xl">
             {subtitle}
           </Text>
         </Heading>

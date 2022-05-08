@@ -36,7 +36,7 @@ export default function StatSection({
         <Box pos="relative">
           <Box pos="absolute" inset="0" h="50%" bg="gray.50"></Box>
           <Box pos="relative" maxW="7xl" mx="auto" px={[4, 6, null, 8]}>
-            <Box maxW="4xl" mx="auto">
+            <Box maxW="7xl" mx="auto">
               <Box
                 as="dl"
                 borderRadius="lg"
@@ -57,7 +57,6 @@ export default function StatSection({
                       flexDirection="column"
                       borderColor="gray.100"
                       p={6}
-                      textAlign="center"
                       borderBottomWidth={['1px', !hasColumn ? '1px' : '0px']}
                       borderRightWidth={{
                         sm: firstColumn || !hasColumn ? '1px' : 0
@@ -73,15 +72,27 @@ export default function StatSection({
                         mt={2}
                         fontSize="lg"
                         lineHeight="6"
-                        fontWeight="medium"
+                        fontWeight="bold"
                         color="gray.500"
                       >
                         {column.label}
                       </Box>
                       <Box
+                        as="dt"
+                        order="2"
+                        mt={4}
+                        fontSize="md"
+                        lineHeight="6"
+                        fontWeight="medium"
+                        color="gray.500"
+                      >
+                        {column.description}
+                      </Box>
+                      <Box
+                        textAlign="center"
                         as="dd"
                         order="1"
-                        fontSize="5xl"
+                        fontSize="4xl"
                         fontWeight="extrabold"
                         color="indigo.600"
                       >

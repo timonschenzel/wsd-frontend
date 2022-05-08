@@ -1,10 +1,10 @@
-const description = `Learn how to build modern marketing websites, with localization and SEO, using GraphCMS, NextJS, Chakra UI, and Vercel.`
-const title = `Build Modern Marketing Websites with a Headless CMS`
+const description = `Bouwen aan verandering.`
+const title = `World Servants Doetinchem`
 const url = `https://marketing-websites.withheadlesscms.com`
 
 const seo = {
   title,
-  titleTemplate: '%s | GraphCMS',
+  titleTemplate: '%s | World Servants Doetinchem',
   description,
   openGraph: {
     description,
@@ -13,8 +13,8 @@ const seo = {
     url
   },
   twitter: {
-    handle: '@GraphCMS',
-    site: '@GraphCMS'
+    handle: '@WorldServants',
+    site: '@WorldServants'
   }
 }
 
