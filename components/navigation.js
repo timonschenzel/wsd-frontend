@@ -13,7 +13,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Transition } from 'react-transition-group'
 
-import { LogoSVG, MarkSVG } from '@/svgs'
 import { MenuIcon, XIcon } from '@/icons'
 import Image from 'next/image'
 
@@ -98,7 +97,7 @@ export default function Navigation({ pages }) {
                     <a>
                       <VisuallyHidden>World Servant Doetinchem</VisuallyHidden>
                       <Box style={{ width: '80px' }}>
-                        <img src="/assets/images/logo.png" />
+                        <Image src="/images/logo.png" width={80} height={80} />
                       </Box>
                     </a>
                   </Link>
@@ -178,7 +177,7 @@ export default function Navigation({ pages }) {
               <a>
                 <VisuallyHidden>World Servant Doetinchem</VisuallyHidden>
                 <Box style={{ width: '80px' }}>
-                  <img src="/assets/images/logo.png" />
+                  <Image src="/images/logo.png" width={80} height={80} />
                 </Box>
               </a>
             </Link>
